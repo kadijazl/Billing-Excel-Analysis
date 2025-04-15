@@ -4,9 +4,12 @@ Excel-based data analysis exercise I completed for an interview assessment. This
 
 #### 📷 Sample Outputs
 **Dashboard Overview**
-![dashboard](./screenshots/dashboard.png)
+![dashboard](./screenshots/dashboard.jpg)
 
-#### Task Overview
+**Master Data**
+![master](./screenshots/master-data.jpg)
+
+#### 🔧 Task Overview
 Analyze billing data and generate business insights from an Excel file with 5 tabs.
 Each month contains call records in seconds, and vendors charge in different increments:
 - Vendor 1: Every 6 seconds
@@ -15,7 +18,7 @@ Each month contains call records in seconds, and vendors charge in different inc
 - Vendor 4: First 30 seconds, then every 6 seconds
 - Vendor 5: Every 30 seconds
 
-#### My Approach
+#### 🧠 My Approach
 Transform
 - convert to table
 - remove nulls
@@ -41,7 +44,7 @@ Dashboard
 - add slide bar and link all dynamic values to update upon rate increase
 
 
-#### Formulas Used
+#### 📊 Formulas Used
 - =VLOOKUP(B2, 'Rates - Carrier'!A:F, 2, FALSE)
 - =VLOOKUP(B2, 'Rates - Carrier'!A:F, 3, FALSE)
 - =VLOOKUP(B2, 'Rates - Clients'!A:I, IF(D2="Landline",6,7), FALSE) * CEILING(C2/60, 1)
@@ -62,7 +65,7 @@ IF(E2="Vendor 5",
 - =Analysis!$B$54
 
 
-#### Summary of Findings
+#### 📌 Summary of Findings
 1. Profitability:
 - Right now, the gross margin is 48%, which is above the target of 45%. To reach 45%, we would need to either lower client billing or increase costs (like vendor rates).
 - If we increase mobile rates by 7% and landline rates by 20%, it could raise revenue, but we'd need to balance this with costs and keeping clients happy.
