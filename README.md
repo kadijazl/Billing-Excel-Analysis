@@ -9,11 +9,11 @@ Excel-based data analysis exercise I completed for an interview assessment. This
 #### Task Overview
 Analyze billing data and generate business insights from an Excel file with 5 tabs.
 Each month contains call records in seconds, and vendors charge in different increments:
-Vendor 1: Every 6 seconds
-Vendor 2: Per second
-Vendor 3: Per minute
-Vendor 4: First 30 seconds, then every 6 seconds
-Vendor 5: Every 30 seconds
+- Vendor 1: Every 6 seconds
+- Vendor 2: Per second
+- Vendor 3: Per minute
+- Vendor 4: First 30 seconds, then every 6 seconds
+- Vendor 5: Every 30 seconds
 
 #### My Approach
 Transform
@@ -42,10 +42,10 @@ Dashboard
 
 
 #### Formulas Used
-=VLOOKUP(B2, 'Rates - Carrier'!A:F, 2, FALSE)
-=VLOOKUP(B2, 'Rates - Carrier'!A:F, 3, FALSE)
-=VLOOKUP(B2, 'Rates - Clients'!A:I, IF(D2="Landline",6,7), FALSE) * CEILING(C2/60, 1)
-=IF(E2="Vendor 1",
+- =VLOOKUP(B2, 'Rates - Carrier'!A:F, 2, FALSE)
+- =VLOOKUP(B2, 'Rates - Carrier'!A:F, 3, FALSE)
+- =VLOOKUP(B2, 'Rates - Clients'!A:I, IF(D2="Landline",6,7), FALSE) * CEILING(C2/60, 1)
+- =IF(E2="Vendor 1",
   CEILING(C2,6)*VLOOKUP(B2,'Rates - Carrier'!A:F,IF(D2="Landline",5,6),FALSE)/60,
 IF(E2="Vendor 2",
   C2*VLOOKUP(B2, 'Rates - Carrier'!A:F, IF(D2="Landline",5,6), FALSE) / 60,
@@ -56,10 +56,10 @@ IF(E2="Vendor 4",
 IF(E2="Vendor 5",
   CEILING(C2,30) * VLOOKUP(B2, 'Rates - Carrier'!A:F, IF(D2="Landline",5,6), FALSE) / 60,
 "Error!")))))
-= [@Billing]-[@Cost]
-=D2 * (1 + $H$2 / 100)
-=E2 * (1 + $I$2 / 100)
-=Analysis!$B$54
+- = [@Billing]-[@Cost]
+- =D2 * (1 + $H$2 / 100)
+- =E2 * (1 + $I$2 / 100)
+- =Analysis!$B$54
 
 
 #### Summary of Findings
