@@ -21,12 +21,14 @@ Transform
 - remove nulls
 - combine all month
 - get vendor, country, number type columns
+
 Statistics
 - calc billing 
 - calc cost
 - calc margins
 - format these columns to currency
 - delete rows where billing < $0.01
+
 Analysis
 - Total billing per client
 - Gross Margins by Client %
@@ -34,6 +36,7 @@ Analysis
 - Gross Margins by Vendor%
 - Gross Margins by Country %
 - Gross Margins by Number %
+
 Dashboard
 - add slide bar and link all dynamic values to update upon rate increase
 
@@ -61,24 +64,24 @@ IF(E2="Vendor 5",
 
 #### Summary of Findings
 1. Profitability:
- Right now, the gross margin is 48%, which is above the target of 45%. To reach 45%, we would need to either lower client billing or increase costs (like vendor rates).
- If we increase mobile rates by 7% and landline rates by 20%, it could raise revenue, but we'd need to balance this with costs and keeping clients happy.
+- Right now, the gross margin is 48%, which is above the target of 45%. To reach 45%, we would need to either lower client billing or increase costs (like vendor rates).
+- If we increase mobile rates by 7% and landline rates by 20%, it could raise revenue, but we'd need to balance this with costs and keeping clients happy.
 
 2. Cost Management:
-Different vendors have different billing methods. Some are more cost-efficient, like those that charge per second instead of per minute.
- We could save money by shifting more calls to cheaper vendors or renegotiating with the ones charging high rates.
+- Different vendors have different billing methods. Some are more cost-efficient, like those that charge per second instead of per minute.
+- We could save money by shifting more calls to cheaper vendors or renegotiating with the ones charging high rates.
 
 3. Revenue Optimization:
-Right now, clients are billed in whole minutes, so even if they talk for just a few seconds over a minute, they still get charged for two minutes. This could feel unfair to clients.
-We could look at which clients bring in the most money and which ones have low margins, and see if we can adjust rates for those.
+- Right now, clients are billed in whole minutes, so even if they talk for just a few seconds over a minute, they still get charged for two minutes. This could feel unfair to clients.
+- We could look at which clients bring in the most money and which ones have low margins, and see if we can adjust rates for those.
 
 4. Risks and Pressures:
-There's a risk of losing clients if competitors offer better rates or billing methods.
- If we raise rates, clients might not be happy, so we need to find a balance between making money and keeping customers satisfied.
+- There's a risk of losing clients if competitors offer better rates or billing methods.
+- If we raise rates, clients might not be happy, so we need to find a balance between making money and keeping customers satisfied.
 
 5. Recommendations:
- Use More Vendors: By working with more vendors or negotiating better rates, we can reduce costs.
- Try Different Billing: We could test charging clients in smaller time increments (like per second) or offer different pricing for different types of calls.
-Focus on Profitable Markets**: Some countries or carriers are more profitable than others, so we should consider focusing on those.
+- Use More Vendors: By working with more vendors or negotiating better rates, we can reduce costs.
+- Try Different Billing: We could test charging clients in smaller time increments (like per second) or offer different pricing for different types of calls.
+- Focus on Profitable Markets: Some countries or carriers are more profitable than others, so we should consider focusing on those.
 
 
