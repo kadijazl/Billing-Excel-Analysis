@@ -1,4 +1,4 @@
-# Billing Excel Analysis
+# Billing Analysis
 
 Excel-based data analysis exercise I completed for an interview assessment. This is my first time handling the full data analysis workflow in Excel (before this I always used Pandas & Tableau), so I have to learn everything from scratch. The task was completed in 5 days.
 
